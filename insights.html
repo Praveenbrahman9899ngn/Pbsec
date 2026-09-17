@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights — PB Sec</title>
+<meta name="description" content="Practical writing on identity, cloud security, resilience and incident response — the things we get asked about most.">
+<meta name="theme-color" content="#1b0b33">
+<meta property="og:title" content="Insights — PB Sec">
+<meta property="og:description" content="Practical writing on identity, cloud security, resilience and incident response — the things we get asked about most.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pbsec.com/insights.html">
+<link rel="canonical" href="https://pbsec.com/insights.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.svg">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="insights">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="PB Sec home">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="bm" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2 5 6.5v9C5 23.4 9.7 28.6 16 30c6.3-1.4 11-6.6 11-14.5v-9L16 2Z" fill="url(#bm)"/>
+        <path d="M16 9.5a3.2 3.2 0 0 0-3.2 3.2v1.6h-.6a1 1 0 0 0-1 1v5.2a1 1 0 0 0 1 1h7.6a1 1 0 0 0 1-1v-5.2a1 1 0 0 0-1-1h-.6v-1.6A3.2 3.2 0 0 0 16 9.5Zm1.7 4.8h-3.4v-1.6a1.7 1.7 0 0 1 3.4 0Z" fill="#fff"/>
+      </svg>
+      <span>PB<em>Sec</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+        <a href="services.html">Services</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="insights.html" class="is-active" aria-current="page">Insights</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="index.html#posture">Free posture check</a>
+      <a class="btn btn-primary" href="contact.html">Talk to us</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><span aria-current="page">Insights</span></li>
+      </ol>
+    <span class="eyebrow eyebrow--light" data-accent="cyan">Insights</span>
+    <h1>Practical notes from the work</h1>
+    <p class="lede">No thought-leadership, no predictions. Just the problems we get asked about most often, written up so you can act on them without hiring anyone.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar" id="insightFilter" role="group" aria-label="Filter articles by topic">
+      <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="web" aria-pressed="false" data-accent="magenta">Web</button>
+      <button class="filter-btn" data-filter="mobile" aria-pressed="false" data-accent="amber">Mobile</button>
+      <button class="filter-btn" data-filter="network" aria-pressed="false" data-accent="blue">Network</button>
+      <button class="filter-btn" data-filter="ai" aria-pressed="false" data-accent="cyan">AI security</button>
+      <button class="filter-btn" data-filter="detection" aria-pressed="false" data-accent="emerald">Threat detection</button>
+      <button class="filter-btn" data-filter="redteam" aria-pressed="false" data-accent="rose">Red teaming</button>
+    </div>
+    <div class="insight-grid">
+
+      <a class="insight-card reveal" href="insights/what-a-web-pentest-covers.html" data-category="web" data-accent="magenta">
+        <div class="insight-meta">
+          <span class="tag">Web</span>
+          <span>6 min read</span>
+        </div>
+        <h3>What a web application penetration test actually covers</h3>
+        <p>Most scoping documents list the same six bullet points. Here is what those bullets really mean, and which one is usually where the serious findings are hiding.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="insight-card reveal" href="insights/android-and-ios-fail-differently.html" data-category="mobile" data-accent="amber">
+        <div class="insight-meta">
+          <span class="tag">Mobile</span>
+          <span>6 min read</span>
+        </div>
+        <h3>Android and iOS fail differently</h3>
+        <p>Treating mobile as one platform means missing the interesting parts. The two ecosystems have genuinely different failure modes, and the test plan should reflect that.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="insight-card reveal" href="insights/where-network-tests-find-problems.html" data-category="network" data-accent="blue">
+        <div class="insight-meta">
+          <span class="tag">Network</span>
+          <span>6 min read</span>
+        </div>
+        <h3>Where network penetration tests still find real problems</h3>
+        <p>External testing tells you how hard you are to enter. Internal testing tells you what happens next — and that is where the damage usually is.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="insight-card reveal" href="insights/prompt-injection-the-ai-attack-surface.html" data-category="ai" data-accent="cyan">
+        <div class="insight-meta">
+          <span class="tag">AI security</span>
+          <span>7 min read</span>
+        </div>
+        <h3>Prompt injection: the attack surface nobody scoped</h3>
+        <p>Language models have no reliable distinction between data and instructions. That single property undermines a lot of assumptions your existing security controls are built on.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="insight-card reveal" href="insights/detection-is-a-tuning-problem.html" data-category="detection" data-accent="emerald">
+        <div class="insight-meta">
+          <span class="tag">Threat detection</span>
+          <span>6 min read</span>
+        </div>
+        <h3>Detection is a tuning problem, not a tool problem</h3>
+        <p>A platform that fires four hundred alerts a week gets muted within a month. Alert quality, not coverage, is what decides whether detection actually works.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a class="insight-card reveal" href="insights/red-teaming-vs-penetration-testing.html" data-category="redteam" data-accent="rose">
+        <div class="insight-meta">
+          <span class="tag">Red teaming</span>
+          <span>6 min read</span>
+        </div>
+        <h3>Red teaming vs penetration testing: what is the difference?</h3>
+        <p>One asks &quot;what is broken?&quot;. The other asks &quot;can a motivated adversary reach a specific goal?&quot;. The distinction changes how you scope, measure and get value from the work.</p>
+        <span class="read-more">Read the article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </div>
+    <div class="empty-note" id="insightEmpty" hidden>No articles in this topic yet.</div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Want this applied to your environment?</h2>
+        <p>Reading about it is a good start. A 30-minute review will tell you which of these actually applies to you.</p>
+      </div>
+      <a class="btn btn-light btn-lg" href="contact.html">
+        Book a security review
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <defs>
+              <linearGradient id="bmFooter" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#d946ef"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 2 5 6.5v9C5 23.4 9.7 28.6 16 30c6.3-1.4 11-6.6 11-14.5v-9L16 2Z" fill="url(#bmFooter)"/>
+            <path d="M16 9.5a3.2 3.2 0 0 0-3.2 3.2v1.6h-.6a1 1 0 0 0-1 1v5.2a1 1 0 0 0 1 1h7.6a1 1 0 0 0 1-1v-5.2a1 1 0 0 0-1-1h-.6v-1.6A3.2 3.2 0 0 0 16 9.5Zm1.7 4.8h-3.4v-1.6a1.7 1.7 0 0 1 3.4 0Z" fill="#fff"/>
+          </svg>
+          <span>PB<em>Sec</em></span>
+        </a>
+        <p class="footer-about">Independent cybersecurity for companies that need real protection, not a bigger stack of tools.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/web-pentest.html">Web app testing</a></li>
+          <li><a href="services/mobile-pentest.html">Mobile app testing</a></li>
+          <li><a href="services/network-pentest.html">Network testing</a></li>
+          <li><a href="services/ai-security.html">AI security testing</a></li>
+          <li><a href="services/threat-detection.html">Threat detection</a></li>
+          <li><a href="services/red-teaming.html">Red teaming</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="index.html#approach">Our approach</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get started</h4>
+        <ul>
+          <li><a href="index.html#posture">Free posture check</a></li>
+          <li><a href="contact.html">Book a review</a></li>
+          <li><a href="mailto:praveen.jha.sec@gmail.com">praveen.jha.sec@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> PB Sec. All rights reserved.</span>
+      <ul>
+        <li><a href="contact.html">Privacy</a></li>
+        <li><a href="contact.html">Terms</a></li>
+        <li><a href="contact.html">Responsible disclosure</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

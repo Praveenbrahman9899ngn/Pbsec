@@ -1,0 +1,6 @@
+# PB Sec
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://pbsec.com/sitemap.xml
